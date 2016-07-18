@@ -2,6 +2,17 @@
 A static file HTTP/1.1 server written in rust. This server aims to be compliant
 with HTTP/1.1, however some requirements are still missing.
 
+#Using
+Download the project:
+
+`git clone https://github.com/kylecs/Rust-HTTP-Static.git`
+Build with cargo:
+
+`cargo build --release`
+Run:
+
+`sudo ./target/release/rust-http-static -d 'directory'`
+
 ##Supports
 * GET and HEAD requests
 * Persistent Connections
