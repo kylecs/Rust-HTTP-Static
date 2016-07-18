@@ -6,9 +6,11 @@ with HTTP/1.1, however some requirements are still missing.
 Download the project:
 
 `git clone https://github.com/kylecs/Rust-HTTP-Static.git`
+
 Build with cargo:
 
 `cargo build --release`
+
 Run:
 
 `sudo ./target/release/rust-http-static -d 'directory'`
