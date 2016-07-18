@@ -3,15 +3,15 @@ A static file HTTP/1.1 server written in rust. This server aims to be compliant
 with HTTP/1.1, however some requirements are still missing.
 
 ##Supports
-*GET and HEAD requests
-*Persistent Connections
-*Requires host header
-*100 Continue response
-*Date response header
+* GET and HEAD requests
+* Persistent Connections
+* Requires host header
+* 100 Continue response
+* Date response header
 
 ##Does not support
-*Chunked Transfer-Encoding (Do I really need this without supporting POST requests?)
-*If-Modified-Since and If-Unmodified-Since headers
+* Chunked Transfer-Encoding (Do I really need this without supporting POST requests?)
+* If-Modified-Since and If-Unmodified-Since headers
 
 ##Why
 My primary goals with this project is to familiarize myself with both rust
