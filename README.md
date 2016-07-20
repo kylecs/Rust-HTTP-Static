@@ -13,7 +13,7 @@ Build with cargo:
 
 Run:
 
-`sudo ./target/release/rust-http-static -d 'directory'`
+`sudo ./target/release/rust-http-static -d *directory*`
 
 ##Supports
 * GET and HEAD requests
@@ -27,6 +27,6 @@ Run:
 * If-Modified-Since and If-Unmodified-Since headers
 
 ##Why
-My primary goals with this project is to familiarize myself with both rust
+My primary goal with this project was to familiarize myself with both rust
 and the HTTP/1.1 protocol. This is only meant to be a novelty and is
 sure to be riddled with spec violations and security vulnerabilities.
