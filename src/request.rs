@@ -37,6 +37,11 @@ impl HttpRequest {
                 return None
             },
         }
+        if req_line.len() <  10 {
+            //header is missing something
+            //stream.write(b"HTTP/1.1 400 Bad Request").unwrap();
+            return None;
+        }
         let mut req_iter = req_line.split_whitespace();
         same_spec = String::from(req_iter.next_back().unwrap()).to_lowercase() == "http/1.1";
         path = String::from(req_iter.next_back().unwrap());

@@ -1,4 +1,4 @@
-use std::net::{TcpStream,Shutdown};
+use std::net::{TcpStream};
 extern crate time;
 use request;
 use response;
@@ -70,7 +70,6 @@ impl Stream {
             //send data
             res.finalize();
         }
-        self.stream.shutdown(Shutdown::Both).unwrap();
     }
     fn handle_request(&self, req: &mut request::HttpRequest, res: &mut response::HttpResponse){
         match req.request_type {
